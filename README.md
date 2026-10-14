@@ -2,11 +2,11 @@
 
 A simple, free text-to-speech tool. Type any text, pick a language, and listen. No install, no account, no API key.
 
-**Live demo:** https://amiralidlb93-hash.github.io/text-to-speech-/
+**Live demo:** `https://amiralidlb93-hash.github.io/text-to-speech-/
 
 ## Features
 
-- Reads any text you type, in 14 languages: Persian, English, Azerbaijani, Turkish, Russian, Arabic, French, Spanish, German, Italian, Chinese, Japanese, Korean, Hindi
+- Reads any text you type. The language list shows only the languages that have a voice installed on your device (out of Persian, English, Azerbaijani, Turkish, Russian, Arabic, French, Spanish, German, Italian, Chinese, Japanese, Korean, Hindi)
 - Adjustable speech speed, plus pause and stop controls
 - Automatic right-to-left layout for Persian and Arabic text
 - Light and dark mode
@@ -19,7 +19,7 @@ A simple, free text-to-speech tool. Type any text, pick a language, and listen. 
 
 Open the live demo, or open `index.html` in any modern browser. Type your text, choose a language, and press **Play**.
 
-The page uses the browser's built-in [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis), so the available voices depend on your browser and operating system. Microsoft Edge and Chrome usually offer the widest language coverage, including Persian and Azerbaijani. If no voice exists for a language, the page shows a notice and may fall back to a default voice.
+The page uses the browser's built-in [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis), so the available voices depend on your browser and operating system. The language dropdown is built automatically from the voices available on your device, so you only see languages that will actually work. Microsoft Edge and Chrome usually offer the widest coverage. Install more voices in your OS settings and reload the page to see more languages.
 
 ### Desktop version (Python)
 
@@ -54,3 +54,39 @@ README.md         This file
 ## License
 
 Released under the [MIT License](LICENSE).
+
+---
+
+<div dir="rtl">
+
+## توضیحات فارسی
+
+این پروژه یک ابزار ساده و رایگان برای تبدیل متن به گفتار است. متن را می‌نویسید، زبان را انتخاب می‌کنید و برنامه آن را می‌خواند. نیازی به نصب برنامه، ساخت حساب کاربری یا کلید API نیست.
+
+### ⚠️ نکته‌ی مهم: زبان باید روی سیستم شما وجود داشته باشد
+
+این برنامه خودش صدا ندارد و از **صداهایی که روی سیستم‌عامل یا مرورگر شما نصب است** استفاده می‌کند. بنابراین:
+
+- فقط زبان‌هایی در لیست نمایش داده می‌شوند که صدای آن‌ها روی دستگاه شما نصب باشد.
+- اگر زبانی در لیست نیست، یعنی صدای آن روی سیستم شما وجود ندارد.
+- هر دستگاه لیست متفاوتی می‌بیند. مثلاً Edge و Chrome معمولاً زبان‌های بیشتری دارند.
+- ویندوز و مک معمولاً صدای آفلاین برای فارسی و آذربایجانی ندارند. برای این دو زبان از مرورگر Edge استفاده کنید.
+
+### اضافه کردن زبان‌های بیشتر
+
+- **ویندوز:** تنظیمات ← Time & language ← Speech ← Add voices
+- **مک:** تنظیمات ← Accessibility ← Spoken Content ← System Voice ← Manage Voices
+- **لینوکس:** نصب `espeak-ng` با دستور `sudo apt install espeak-ng`
+
+بعد از نصب صدا، صفحه را دوباره بارگذاری کنید (یا نسخه‌ی پایتون را دوباره اجرا کنید) تا زبان جدید در لیست بیاید.
+
+### نحوه‌ی استفاده
+
+- **نسخه‌ی وب:** فایل `index.html` را در مرورگر باز کنید، یا از لینک GitHub Pages استفاده کنید.
+- **نسخه‌ی پایتون:** دستور `python texttospeech.py` را اجرا کنید. این نسخه فقط به کتابخانه‌های خود پایتون نیاز دارد.
+
+### مجوز
+
+این پروژه با مجوز MIT منتشر شده است. می‌توانید آزادانه از آن استفاده کنید، تغییرش دهید و منتشرش کنید.
+
+</div>
