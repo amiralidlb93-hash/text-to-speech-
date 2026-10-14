@@ -2,7 +2,7 @@
 
 A simple, free text-to-speech tool. Type any text, pick a language, and listen. No install, no account, no API key.
 
-**Live demo:** `https://amiralidlb93-hash.github.io/text-to-speech-/
+**Live demo:** https://amiralidlb93-hash.github.io/text-to-speech-/
 
 ## Features
 
@@ -35,13 +35,6 @@ python texttospeech.py
 
 The app lists only the languages that have an installed voice on your system. Windows and macOS usually have no offline Persian or Azerbaijani voice, so use the web version in Edge for those.
 
-## Deploy on GitHub Pages
-
-1. Push these files to a GitHub repository.
-2. Go to **Settings > Pages**.
-3. Under **Source**, choose **Deploy from a branch**, select `main` and the `/ (root)` folder, then save.
-4. After a minute, the site is live at `https://<your-username>.github.io/<repo-name>/`.
-
 ## Project structure
 
 ```
@@ -61,6 +54,7 @@ Released under the [MIT License](LICENSE).
 
 ## توضیحات فارسی
 
+**دمو زنده:** https://amiralidlb93-hash.github.io/text-to-speech-/
 این پروژه یک ابزار ساده و رایگان برای تبدیل متن به گفتار است. متن را می‌نویسید، زبان را انتخاب می‌کنید و برنامه آن را می‌خواند. نیازی به نصب برنامه، ساخت حساب کاربری یا کلید API نیست.
 
 ### ⚠️ نکته‌ی مهم: زبان باید روی سیستم شما وجود داشته باشد
